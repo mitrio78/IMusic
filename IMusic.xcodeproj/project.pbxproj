@@ -32,6 +32,8 @@
 		554C8D3727FC6FEB001B8A08 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C8D3627FC6FEB001B8A08 /* FooterView.swift */; };
 		554C8D3A27FC7E56001B8A08 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 554C8D3927FC7E56001B8A08 /* TrackDetailView.xib */; };
 		554C8D3C27FC7E78001B8A08 /* TrackeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C8D3B27FC7E78001B8A08 /* TrackeDetailView.swift */; };
+		554C8D3E27FCA4D8001B8A08 /* CMTime + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C8D3D27FCA4D8001B8A08 /* CMTime + Extension.swift */; };
+		554C8D4027FCB2E0001B8A08 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554C8D3F27FCB2E0001B8A08 /* Nib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		554C8D3627FC6FEB001B8A08 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		554C8D3927FC7E56001B8A08 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
 		554C8D3B27FC7E78001B8A08 /* TrackeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackeDetailView.swift; sourceTree = "<group>"; };
+		554C8D3D27FCA4D8001B8A08 /* CMTime + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMTime + Extension.swift"; sourceTree = "<group>"; };
+		554C8D3F27FCB2E0001B8A08 /* Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nib.swift; sourceTree = "<group>"; };
 		860DFBA474F60F34388F811D /* Pods-IMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IMusic.debug.xcconfig"; path = "Target Support Files/Pods-IMusic/Pods-IMusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				554C8D2A27FB889B001B8A08 /* UIViewController+Storyboard.swift */,
+				554C8D3D27FCA4D8001B8A08 /* CMTime + Extension.swift */,
+				554C8D3F27FCB2E0001B8A08 /* Nib.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				554C8CF627FB4126001B8A08 /* SearchResponse.swift in Sources */,
+				554C8D4027FCB2E0001B8A08 /* Nib.swift in Sources */,
 				554C8D2227FB85B8001B8A08 /* SearchWorker.swift in Sources */,
 				554C8D2327FB85B8001B8A08 /* SearchRouter.swift in Sources */,
 				554C8CE027FB0918001B8A08 /* ViewController.swift in Sources */,
@@ -327,6 +334,7 @@
 				554C8D3C27FC7E78001B8A08 /* TrackeDetailView.swift in Sources */,
 				554C8CF827FB7649001B8A08 /* NetworkService.swift in Sources */,
 				554C8D2627FB85B8001B8A08 /* SearchInteractor.swift in Sources */,
+				554C8D3E27FCA4D8001B8A08 /* CMTime + Extension.swift in Sources */,
 				554C8CDC27FB0918001B8A08 /* AppDelegate.swift in Sources */,
 				554C8D2B27FB889B001B8A08 /* UIViewController+Storyboard.swift in Sources */,
 				554C8CF027FB0D0E001B8A08 /* MainTabBarController.swift in Sources */,
