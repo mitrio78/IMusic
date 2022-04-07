@@ -8,7 +8,7 @@ import AVFoundation
 import UIKit
 import SDWebImage
 
-protocol TrackMovingDelegate: AnyObject {
+protocol TrackMovingDelegate {
     func moveBackToPreviousTrack() -> SearchViewModel.Cell?
     func moveForwardToNextTrack() -> SearchViewModel.Cell?
 }
@@ -33,7 +33,7 @@ class TrackDetailView: UIView {
     @IBOutlet weak var artistNameLabel: UILabel!
     @IBOutlet weak var trackTitleLabel: UILabel!
     
-    weak var delegate: TrackMovingDelegate?
+    var delegate: TrackMovingDelegate?
     weak var tabBarDelegate: MainTabBarControllerDelegate?
     
     let player: AVPlayer = {

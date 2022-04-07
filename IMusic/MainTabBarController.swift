@@ -20,8 +20,6 @@ class MainTabBarController: UITabBarController {
     private var maximizedTopAnchorContraints: NSLayoutConstraint!
     private var bottomAnchorConstraint: NSLayoutConstraint!
     let trackDetailView: TrackDetailView = TrackDetailView.loadFromNib()
-//    let library = Library()
-    let hostVC = UIHostingController(rootView: Library())
  
     
     override func viewDidLoad() {
@@ -32,13 +30,15 @@ class MainTabBarController: UITabBarController {
         view.backgroundColor = .white
         tabBar.tintColor = UIColor(rgb: 0xFD2D55)
         tabBar.backgroundColor = .white
+        var library = Library()
+        library.tabBarDelegate = self
+        let hostVC = UIHostingController(rootView: library)
         hostVC.tabBarItem.image = UIImage(named: "library")
         hostVC.tabBarItem.title = "Library"
         viewControllers = [
             hostVC,
             generateViewController(rootViewController: searchVC, image: UIImage(named: "search")!, title: "Search")
         ]
-        
     }
     
     private func generateViewController(rootViewController: UIViewController, image: UIImage, title: String) -> UIViewController {

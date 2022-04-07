@@ -43,9 +43,19 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPA-ZN-jkU">
+                        <rect key="frame" x="373" y="34" width="16" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="Add"/>
+                        <connections>
+                            <action selector="addTrack:" destination="6xa-7i-Ig2" eventType="touchUpInside" id="rkD-Js-jut"/>
+                        </connections>
+                    </button>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="addTrackOutlet" destination="dPA-ZN-jkU" id="uGe-oA-41F"/>
                 <outlet property="artistNameLabel" destination="dfP-Qi-gpl" id="Ow9-Hc-vnq"/>
                 <outlet property="collectionNameLabel" destination="2Z9-w7-fjL" id="sRy-qG-uQY"/>
                 <outlet property="trackImageView" destination="IHs-rb-2av" id="TU2-o2-4jT"/>
@@ -55,6 +65,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Add" width="16" height="16"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
